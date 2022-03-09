@@ -26,6 +26,7 @@ if ($result->num_rows > 0) {
     echo "Login Successful";
     echo "<br>";
     echo "Welcome ".$_POST['email'];
+    echo "<br> <a href='./home.php' ><button type='button' class='mt-1 btn btn-primary'>Go to Scitech Website</button> </a>";
 
 } else {
     echo "Login Failed";
