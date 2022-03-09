@@ -22,12 +22,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link " href="/Home.php">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/Epsilon.php">Epsilon</a>
+            <a class="nav-item nav-link " href="./Home.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="./Epsilon.php">Epsilon</a>
             <a class="nav-item nav-link active" href="#">Electromos</a>
-            <a class="nav-item nav-link" href="/Ingenuity.php">Ingenuity</a>
-            <a class="nav-item nav-link" href="/GDSC.php">GDSC</a>
-            <a class="nav-item nav-link" href="/Motorsports.php">Motorsports</a>
+            <a class="nav-item nav-link" href="./Ingenuity.php">Ingenuity</a>
+            <a class="nav-item nav-link" href="./GDSC.php">GDSC</a>
+            <a class="nav-item nav-link" href="./Motorsports.php">Motorsports</a>
           </div>
         </div>
       </nav>
@@ -41,13 +41,15 @@
 
 <?php
   include 'connect_mysql.php';
+  $sql="USE CS200_project";
+  $conn->query($sql);
   $sql = "SELECT * FROM Electromos";
   $result = $conn->query($sql);
   
   if ($result->num_rows > 0) {
       // output data of each row
     
-    <table class="table">
+    echo "<table class='table'>
         <thead>
           <tr>
             <th>Components</th>
@@ -56,15 +58,13 @@
           </tr>
         </thead>
       <tbody>
-        <tr>
+        ";
             while($row = $result->fetch_assoc()) {
-              <td>$row["Components"]</td> 
-              <td>$row["Left"]</td>
-              <td>$row["Total"]</td>
+              echo "<tr><td>". $row["Components"] . "</td> 
+              <td>". $row["Left"] ."</td>
+              <td>". $row["Total"] ."</td></tr>";
             }
-        </tr>
-      </tbody>
-    </table>
+        echo"</tbody></table>";
       
   }else {
       echo "No components available";
