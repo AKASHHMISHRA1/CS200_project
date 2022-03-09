@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -23,20 +23,20 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/Epsilon.html">Epsilon</a>
-            <a class="nav-item nav-link" href="/Electromos.html">Electromos</a>
-            <a class="nav-item nav-link" href="/Ingenuity.html">Ingenuity</a>
-            <a class="nav-item nav-link" href="/GDSC.html">GDSC</a>
-            <a class="nav-item nav-link" href="/Motorsports.html">Motorsports</a>
+            <a class="nav-item nav-link" href="/Epsilon.php">Epsilon</a>
+            <a class="nav-item nav-link" href="/Electromos.php">Electromos</a>
+            <a class="nav-item nav-link" href="/Ingenuity.php">Ingenuity</a>
+            <a class="nav-item nav-link" href="/GDSC.php">GDSC</a>
+            <a class="nav-item nav-link" href="/Motorsports.php">Motorsports</a>
           </div>
         </div>
       </nav>
 
-    <a href="/Epsilon.html"> <button type="button" class="btn btn-primary btn-lg btn-block">Epsilon</button></a> 
-    <a href="/Electromos.html"> <button type="button" class="btn btn-secondary btn-lg btn-block">Electromos</button> </a> 
-    <a href="Ingenuity.html"> <button type="button" class="btn btn-primary btn-lg btn-block">Ingenuity</button></a>
-    <a href="GDSC.html"> <button type="button" class="btn btn-secondary btn-lg btn-block">GDSC</button> </a>
-    <a href="Motorsports.html"> <button type="button" class="btn btn-primary btn-lg btn-block">Motorsports</button> </a>
+    <a href="/Epsilon.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Epsilon</button></a> 
+    <a href="/Electromos.php"> <button type="button" class="btn btn-secondary btn-lg btn-block">Electromos</button> </a> 
+    <a href="Ingenuity.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Ingenuity</button></a>
+    <a href="GDSC.php"> <button type="button" class="btn btn-secondary btn-lg btn-block">GDSC</button> </a>
+    <a href="Motorsports.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Motorsports</button> </a>
 
 
 </body>

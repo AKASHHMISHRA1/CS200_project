@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>GDSC</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -22,12 +22,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link " href="/Home.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/Epsilon.html">Epsilon</a>
-            <a class="nav-item nav-link" href="/Electromos.html">Electromos</a>
-            <a class="nav-item nav-link" href="/Ingenuity.html">Ingenuity</a>
+            <a class="nav-item nav-link " href="/Home.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/Epsilon.php">Epsilon</a>
+            <a class="nav-item nav-link" href="/Electromos.php">Electromos</a>
+            <a class="nav-item nav-link" href="/Ingenuity.php">Ingenuity</a>
             <a class="nav-item nav-link active" href="#">GDSC</a>
-            <a class="nav-item nav-link" href="/Motorsports.html">Motorsports</a>
+            <a class="nav-item nav-link" href="/Motorsports.php">Motorsports</a>
           </div>
         </div>
       </nav>
