@@ -20,25 +20,19 @@
 <?php
 $sql="USE CS200_project";
 $conn->query($sql);
-$sql="SELECT email FROM users WHERE email='$_POST[email]'";
+$sql="SELECT email,pswd FROM users WHERE email='$_POST[email]' and pswd='$_POST[pswd]'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-    echo "User already exists <br>";
-    echo "Please Login with your email address and password";
+    echo "Login Successful";
+    echo "<br>";
+    echo "Welcome ".$_POST['email'];
+
 } else {
-   $sql = "INSERT INTO users (email, pswd)
-   VALUES ('$_POST[email]', '$_POST[pswd]')";
-   if ($conn->query($sql) === TRUE) {
-   echo "User added successfully";
-   echo "<br>";
-   echo "You may login Now";
-   } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-   }
+    echo "Login Failed";
+    echo "<br>";
+    echo "Please Login with your email address and password or signup<br>";
+    echo "<a href='./index.php' ><button type='button' class='mt-1 btn btn-primary'>Signup</button> </a>";
+
 
 }
-echo '<br><a href="./login.html" ><button type="button" class="mt-1 btn btn-primary">Login</button> </a>';
 ?>
-</body>
-
-</html>
