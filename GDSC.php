@@ -37,6 +37,37 @@
           <h1>List of Available Components</h1>
         </div>
       </div>
+  
+<?php 
+  include 'connect_mysql.php';
+  $sql = "SELECT * FROM GDSC";
+  $result = $conn->query($sql);
+  
+  if ($result->num_rows > 0) {
+      // output data of each row
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Components</th>
+            <th>Components Left</th>
+            <th>Total Number of Comp.  </th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+            while($row = $result->fetch_assoc()) {
+              <td>$row["Components"]</td> 
+              <td>$row["Left"]</td>
+              <td>$row["Total"]</td>
+            }
+        </tr>
+      </tbody>
+    </table>
       
+  }else {
+      echo "No components available";
+  }
+?>
 </body>
 </html>
