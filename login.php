@@ -23,10 +23,13 @@ $conn->query($sql);
 $sql="SELECT email,pswd FROM users WHERE email='$_POST[email]' and pswd='$_POST[pswd]'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-    echo "Login Successful";
-    echo "<br>";
-    echo "Welcome ".$_POST['email'];
-    echo "<br> <a href='./Home.php' ><button type='button' class='mt-1 btn btn-primary'>Go to Scitech Website</button> </a>";
+  $message = "Login Successful";
+  echo "<script type='text/javascript'>alert('$message');</script>";
+  header("Location: ./Home.php");
+    //echo "Login Successful";
+    //echo "";
+    //echo "Welcome ".$_POST['email'];
+    //echo "<br> <a href='./Home.php' ><button type='button' class='mt-1 btn btn-primary'>Go to Scitech Website</button> </a>";
 
 } else {
     echo "Login Failed";
