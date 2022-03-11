@@ -23,8 +23,6 @@ $conn->query($sql);
 $sql="SELECT email,pswd FROM users WHERE email='$_POST[email]' and pswd='$_POST[pswd]'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-  $message = "Login Successful";
-  echo "<script type='text/javascript'>alert('$message');</script>";
   header("Location: ./Home.php");
     //echo "Login Successful";
     //echo "";
