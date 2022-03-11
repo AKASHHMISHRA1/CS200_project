@@ -32,8 +32,8 @@
         </div>
       </nav>
 
-    <a href="/Epsilon.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Epsilon</button></a> 
-    <a href="/Electromos.php"> <button type="button" class="btn btn-secondary btn-lg btn-block">Electromos</button> </a> 
+    <a href="Epsilon.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Epsilon</button></a> 
+    <a href="Electromos.php"> <button type="button" class="btn btn-secondary btn-lg btn-block">Electromos</button> </a> 
     <a href="Ingenuity.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Ingenuity</button></a>
     <a href="GDSC.php"> <button type="button" class="btn btn-secondary btn-lg btn-block">GDSC</button> </a>
     <a href="Motorsports.php"> <button type="button" class="btn btn-primary btn-lg btn-block">Motorsports</button> </a>
