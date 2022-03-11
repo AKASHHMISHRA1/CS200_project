@@ -15,7 +15,9 @@
     <style>
       .container {
         content: "";
-        background: url("download.jpg") center center/cover;
+
+        background: url("photo-1603376277241-70b32265cf10.jpg") no-repeat center
+          center/cover;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -24,12 +26,53 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
+
       label {
-        color: #f6fa07;
+        color: #1f07fa;
       }
+
       .log {
         margin: 10px 10px 10px 10px;
+      }
+      form {
+        background-color: aliceblue;
+        margin-top: 30px;
+        border: 2px solid rgb(12, 12, 12);
+        border-radius: 8px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+      }
+      button {
+        width: 100px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+      input {
+        border-color: aliceblue;
+        box-sizing: border-box;
+        padding-left: 10px;
+      }
+      .form-group label {
+        /* display: flex;
+      flex-direction: column; */
+        float: left;
+        margin-left: 7px;
+      }
+      .form-group {
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+      }
+      .invalid-feedback {
+        float: left;
       }
     </style>
   </head>
@@ -37,12 +80,7 @@
   <body>
     <div class="container" id="hii" width="100%">
       <div class="log">
-        <img
-          src="./pngtree-user-login-or-authenticate-icon-on-gray-background-flat-icon-ve-png-image_1786166.jpg"
-          height="120px"
-          width="120px"
-          alt=""
-        />
+        <h2>Log In</h2>
       </div>
       <form action="./login.php" class="was-validated" method="post">
         <div class="form-group">
@@ -64,7 +102,7 @@
           <input
             type="password"
             class="form-control"
-            id="pwd"
+            id="pswd"
             placeholder="Enter password"
             name="pswd"
             required
@@ -73,6 +111,12 @@
           <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <br />
+        <hr />
+        Or
+        <div class="form-group">
+          <div>New user? <a href="index.php"> Create Account</a></div>
+        </div>
       </form>
     </div>
   </body>
